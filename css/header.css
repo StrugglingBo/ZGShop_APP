@@ -1,0 +1,389 @@
+/*头部样式*/
+.header{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto; /*设置左右居中*/
+}
+/*头部导航栏*/
+.head{
+    width: 100%;
+    height: auto;
+    position: fixed; /*将head框固定定位在中间*/
+    z-index: 33;
+}
+.head .navigation{
+    max-width: 640px;
+    min-width: 280px;
+    height: 40px;
+    /*width: 100%;*/
+    /*background: red;*/
+    position: relative;
+}
+
+/*京东图标*/
+.head .navigation .navigation-logo{
+    background:url("../images/logo03.png") no-repeat;
+    position: absolute;
+    margin-top:8px;
+    /*margin-left:5px;*/
+    height: 25px;
+    width: 90px;
+    /*background-position:-4px -110px;*/
+    background-size:80px 25px; /*放缩图片的大小，将图片缩小为原来的2倍（原图是400px*400px）*/
+    /*在图片的放缩当中一定要注意，坐标跟height、width也要一起放缩，缩小为原来的2倍*/
+}
+.navigation-center{
+    width:100%;
+    height: 40px;
+    position: absolute;
+}
+
+/*搜索图标*/
+.navigation-center .find{
+    background:url("../images/jd-sprites.png") no-repeat;
+    height: 22px;
+    width: 21px;
+    background-position: -59px -110px;
+    background-size: 200px 200px;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 12px;
+    display: block;
+    z-index:22;
+}
+
+.text{
+    width:100%;
+    height:inherit;
+    padding:0 70px;
+}
+.navigation .navigation-center .text input{
+    display: block;
+    height: 30px;
+    width:100%;
+    margin-top:5px;
+    border-radius: 15px;
+    padding-left: 30px; /*使input框中的光标在搜索图标的右边*/
+}
+
+/*登录按钮*/
+.navigation .login{
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    right:0px;
+    top: 0px;
+    text-align: center;
+    line-height: 40px;
+    margin-right:20px;
+}
+
+/*中间轮播图*/
+
+/*swipe轮播插件css配置文件*/
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.swipe-wrap > li {
+    float:left;
+    width:100%;
+    position: relative;
+}
+
+
+.header .center_img{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.center_img .img{
+    width: 800%;
+}
+.center_img .img li {
+    float: left;
+    width: 12.5%;
+}
+.center_img .img li img{
+    width: 100%;
+    /*display: block;*/
+}
+
+/*轮播图上的小圆点*/
+.center_img .clearfix{
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -55px;
+}
+.clearfix li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ffffff;
+    border-radius:3px;
+    float: left;
+    margin-left: 6px;
+    /*cursor: pointer;*/
+}
+
+/*商品分类*/
+.header .shop_class{
+    width: 100%;
+    height: 254px;
+    background: #e0e0e0;
+    position: relative;
+}
+.shop_class .shop_logo{
+    height: 254px;
+    position: absolute;
+    margin: 0 ;
+    width: 100%;
+    /*border-bottom: 1px solid #e0e0e0; */  /*给ul底部设置边框*/
+}
+.shop_class .shop_logo a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: block;
+}
+.shop_logo li{
+    margin-top: 10px;
+    float: left;
+    margin: 10px auto;
+    width:20%;
+    height: 68px;
+    border: none;
+    /*去掉li标签的边框*/
+}
+.shop_class img{
+    width: 58px;
+    height: 58px;
+    margin: 10px auto;
+    border: 0;
+    vertical-align: middle;
+}
+.shop_class p{
+    font-size: 14px;
+}
+
+
+.shop_class .other{
+    width: 96%;
+    height: 25px;
+    background:white;
+    position: absolute;
+    left: 2%;
+    bottom: 10px;
+    border-radius: 8px;
+}
+.other a{
+    width: 100%;
+    height: 30px;
+    display: block;
+    position:absolute;
+    padding-left: 10px;
+    bottom: 0px;
+}
+.other a img{
+    width: 80px;
+    height: 15px;
+}
+.other a span{
+    font-size: 13px;
+}
+.other a .sp1{
+    padding-left: 5px;
+}
+.other a .sp2{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 5px;
+}
+
+
+/*中间商品展示部分*/
+.nav{
+    max-width: 640px;
+    min-width: 320px;
+    height: 260px;
+    /*border: 1px solid #e0e0e0;*/
+    margin: 0 auto; /*设置左右居中*/
+}
+.nav .seckill_top{
+    width: 100%;
+    height: 35px;
+    /*background: yellow;*/
+    overflow: hidden;
+}
+.seckill_top .img{
+    background: url("../images/seckill-icon.png") no-repeat;
+    background-size: 25px 25px;
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: left;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.seckill_top p{
+    width: 60px;
+    height: 40px;
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    color: red;
+    line-height: 35px;
+    white-space: nowrap;
+}
+.seckill_time{
+    /*width: 200px;*/
+    /*height: 18px;*/
+    float: left;
+    margin-top: 9px;
+    margin-left: 5px;
+}
+.seckill_time .num{
+    background: #000;
+    color: white;
+    width: 12px;
+    height: 15px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block; /*将秒杀时间的显示黑框撑开*/
+}
+.seckill_time .time_num{
+    /*调整时间显示更紧凑*/
+    width: 5px;
+    display: inline-block;
+}
+.seckill_top .seckill_right{
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+    line-height: 35px;
+    display: inline-block;
+}
+.nav .shop_ss{
+    width: 100%;
+    height: 200px;
+    /*background: #e0e0e0;*/
+    border: 1px solid #e0e0e0;
+}
+.nav .shop_ss .clearfix{
+    width: 100%;
+}
+.shop_ss .clearfix li{
+    width: 30%;
+    /*list-style: none;*/
+    border: none;
+    float: left;
+    text-align: center;
+}
+.shop_ss .clearfix li .img_box{
+    width: 100%;
+    border-right: 1px solid #e0e0e0;
+    margin-top: 20px;
+}
+/*最后一个盒子没有右边框*/
+.shop_ss .clearfix li:last-child .img_box{
+    border-right: none;
+}
+.shop_ss .clearfix li .img_box img{
+    width: 64%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.shop_ss .clearfix li span{
+    text-decoration: line-through; /*给旧价格划中间线*/
+}
+
+
+
+/*底部导航栏*/
+.footer{
+    width: 100%;
+    height: 40px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+
+}
+.footer .footer_ul{
+    height: 100%;
+    border-top: 2px solid #e0e0e0;
+}
+.footer .footer_ul li{
+    text-align: center;
+    float:left;
+    width: 25%;
+    height: 100%;
+
+}
+.footer .footer_ul li a img{
+    width: 58px;
+    height:44px;
+}
+
+
+/*超值购*/
+/*热门活动*/
+.product_box{
+    background: #fff;
+    box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.product_top{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.product_top p {
+    margin-left: 20px;
+    line-height: 35px;
+}
+/*标题前面的红色小盒子*/
+.product_top p:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+    left: 10px;
+    top: 12px;
+}
+.p_left{
+    width: 50%;
+    float: left;
+}
+.p_right{
+    width: 50%;
+    float: right;
+}
+.product_bottom a img{
+    width: 100%;
+}
+
+.b_top{
+    border-top: 1px solid #e0e0e0;
+}
+.b_right{
+    border-right: 1px solid #e0e0e0;
+}
+.b_left{
+    border-left: 1px solid #e0e0e0;
+}
+.b_bottom{
+    border-bottom: 1px solid #e0e0e0;
+}
